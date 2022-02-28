@@ -1,0 +1,15 @@
+# IDE
+/.vscode
+# dependencies
+node_modules/
+outputs/
+
+# misc
+.DS_Store
+lerna-debug.log
+npm-debug.log
+yarn-error.log
+**/npm-debug.log
+
+# environment
+.env
