@@ -71,7 +71,9 @@ function processTest() {
         });
     device
         .on('message', function (topic, payload) {
-            console.log('message', topic, payload.toString());
+            console.log('message', topic);
+            let buff = Buffer.from(payload.toString(), 'base64');
+            console.log(JSON.parse(buff.toString()));
         });
 
 }
